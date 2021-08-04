@@ -10,7 +10,7 @@
 ## Introduction
 
 Many HTML tags behave in unique ways. Some apply automatic styling, like `p`
-tags that create margins around text.  Some, like the header tags, increase the
+tags that create margins around text. Some, like the header tags, increase the
 font size. Using these tags delineates our content. When reading HTML, using the
 correct tags informs us of what the content's purpose is. If we see an `h1` tag,
 we know that we're looking at a _big_ page header. In this lesson, we're going to
@@ -33,7 +33,7 @@ out our favorite foods. We _could_ write this like so:
 ```
 
 The above would create a new line on the page for each food, but doesn't really
-indicate that these things are related.  Using the built in `ul`, `ol` and `li`
+indicate that these things are related. Using the built in `ul`, `ol` and `li`
 HTML tags however, we can group related list content together. We call such a
 grouping a "list."
 
@@ -45,7 +45,7 @@ them, we'll add `<li>` tags, each listing a single month. Going back to our
 favorite foods example, if we wanted convert it to a list, it would look like
 this:
 
-```HTML
+```html
 <ul>
   <li>Ham and Cheese</li>
   <li>Grilled Cheese</li>
@@ -63,7 +63,7 @@ Lists are very flexible and we can even nest lists _inside_ of lists. Say we
 wanted to breakdown our favorite foods by category. We may have multiple
 categories and one or more items in _each_:
 
-```HTML
+```html
 <ul>
   <li>Sandwiches
     <ul>
@@ -100,12 +100,12 @@ us to easily display related and nested content in a readable format.
 
 The first part of this challenge is to make the first 2 tests pass by:
 
-1. Creating an unordered list 
+1. Creating an unordered list
 2. Nesting each grilled cheese ingredient as a list item wrapped in `<li>` tags
 
 Open `index.html` in your browser (if you are using the Learn in-browser IDE, run `httpserver`).
 
-Let's say we wanted to list out the ingredients required for making a grilled cheese sandwich.  The
+Let's say we wanted to list out the ingredients required for making a grilled cheese sandwich. The
 ingredients are: `2 slices of bread`, `4 slices of cheese`, `1 tbsp of butter`.
 
 For the first part of this challenge, in `index.html`, create an unordered list
@@ -125,17 +125,17 @@ of list!
 
 ## Identify the Ordered List Tag
 
-![](https://i.imgflip.com/28mpcx.jpg)
+![li elements meme](https://i.imgflip.com/28mpcx.jpg)
 
 Unordered lists are great for organizing related content where it doesn't matter
-what goes first, like in our grilled cheese ingredients.  In situations where we
+what goes first, like in our grilled cheese ingredients. In situations where we
 _want_ items to be displayed in a specific, numbered order, we will want to use
 the _ordered list_ tag, which is written as `<ol>` instead of `<ul>`. Both use
 `<li>` tags inside, but this time, `<ol>` will display a numbered list instead
 of bullets. If say, we wanted to write a _ranked_ list of favorite foods, it
 might look like:
 
-```HTML
+```html
 <h3>Top 5 Favorite Foods</h3>
 <ol>
   <li>Grilled Cheese</li>
@@ -147,25 +147,24 @@ might look like:
 ```
 
 > Feel free to test this out by adding it to `index.html`, saving and refreshing
-> the tab where the file is open. Now, `Grilled Cheese` will be displayed as `1.
-> Grilled Cheese` as the #1 food (where it belongs).
+> the tab where the file is open. Now, `Grilled Cheese` will be displayed as `1. Grilled Cheese` as the #1 food (where it belongs).
 
 Nested ordered lists works the same as unordered, but instead of hollow and
 square bullets, each nested list will still display numbers.
 
-**Note:** In a nested list, you _must_ provide the `ol` or `ul` wrapper.  Otherwise, an
+**Note:** In a nested list, you _must_ provide the `ol` or `ul` wrapper. Otherwise, an
 `li` inside another `li` will just be displayed as two items at the same level.
-This is because technically, you do not need to write a closing `li` tag.  The
+This is because technically, you do not need to write a closing `li` tag. The
 following example will be displayed the same as the previous:
 
-```HTML
+```html
 <h3>Top 5 Favorite Foods</h3>
 <ol>
-  <li>Grilled Cheese
-  <li>Sushi
-  <li>Cheese and crackers
-  <li>Cheese soup
-  <li>Nacho Cheese French Fries
+  <li>Grilled Cheese</li>
+  <li>Sushi</li>
+  <li>Cheese and crackers</li>
+  <li>Cheese soup</li>
+  <li>Nacho Cheese French Fries</li>
 </ol>
 ```
 
@@ -173,7 +172,7 @@ following example will be displayed the same as the previous:
 
 To complete the challenge write the necessary HTML to pass the tests:
 
-3. Create an ordered list 
+3. Create an ordered list
 4. Nest each step for creating grilled cheese as a list item wrapped in `<li>` tags
 
 Okay, so we've got our grilled cheese ingredients, but what about the steps
@@ -181,22 +180,21 @@ requires to make a grilled cheese? Steps to a recipe need to be
 in order, otherwise we may end up with burnt cheese covered in bread and topped
 with a square of butter. The steps to making a basic grilled cheese would be:
 `Spread butter on bread and frying pan`, `Place bread in frying pan and fry`,
-`Add cheese on top of bread`, `Cover with second slice of bread`, `Turn over and
-fry for 2 minutes`
+`Add cheese on top of bread`, `Cover with second slice of bread`, `Turn over and fry for 2 minutes`
 
-***
-Once you've written an ordered list that displays these 5 steps correctly, run `learn test` 
+---
+
+Once you've written an ordered list that displays these 5 steps correctly, run `learn test`
 to see the tests pass.
-***
+
+---
 
 ## Conclusion
 
 Lists in HTML are very useful for organizing related content, and are really the
-only way indicate that content is related with basic HTML.  Using unordered
+only way indicate that content is related with basic HTML. Using unordered
 lists ends up being very useful for more than just listing favorite foods and
-ingredients.  Its possible, for instance, to use list elements to organize
+ingredients. Its possible, for instance, to use list elements to organize
 navigation links - with styling, we make the content look however we want:
 remove the bullets, make them line up horizontally, but in our HTML they will
 still be organized and easy to read.
-
-
